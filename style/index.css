@@ -1,1 +1,103 @@
 /* CSS stillerinizi buraya girin */
+
+/* General Settings */
+h1, h2 {
+    font-family: 'Raleway', sans-serif;
+}
+body {
+    font-family: 'Roboto Mono', monospace;
+    background: #2D1E2F;
+}
+.container {
+    width: 90vw;
+    margin: 0 auto;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+/* header */
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    background: #f7b32b;
+}
+header nav a:first-child {
+    margin-right: auto;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+header nav a {
+    padding: 1rem;
+    color: #fcf6b1;
+    transition: .3s;
+}
+header nav a:hover {
+    color: #2D1E2F;
+    text-decoration: underline;
+   
+}
+/* hero */
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: #fcf6b1;
+}
+.hero h1 {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+}
+.hero a {
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+    background: #2D1E2F;
+    color: #fcf6b1;
+}
+
+/* preview */
+.preview {
+    text-align: center;
+    color: #fcf6b1;
+    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project-card {
+    width: 33.3333%;
+    margin: 0 0 1rem 0;
+}
+
+/* footer */
+footer {
+    background: #f7b32b;
+    text-align: center;
+    padding: 1.5rem 0;
+    
+}
+footer a {
+    padding: .5rem;
+    margin: .5rem;
+    color: #2D1E2F;
+    border: 2px dashed #2D1E2F;
+    transition: .3s;
+}
+footer a:hover {
+    background: #fcf6b1;
+}
+
+
+
+
