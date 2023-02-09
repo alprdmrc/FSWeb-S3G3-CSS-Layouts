@@ -1,6 +1,7 @@
 /* CSS stillerinizi buraya girin */
 
 /* General Settings */
+
 h1, h2 {
     font-family: 'Raleway', sans-serif;
 }
@@ -8,8 +9,13 @@ body {
     font-family: 'Roboto Mono', monospace;
     background: #2D1E2F;
 }
+@media screen and (max-width:800px) {
+    *, body, h1, h2, a {
+        font-size: 80%;
+    }
+}
 .container {
-    width: 90vw;
+    width: 80vw;
     margin: 0 auto;
 }
 img {
@@ -19,17 +25,27 @@ img {
 
 
 /* header */
-
+header {
+    background: #f7b32b;
+}
 header nav {
     display: flex;
     justify-content: flex-end;
     align-items: baseline;
-    background: #f7b32b;
+}
+@media screen and (max-width:425px) {
+    header nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    header nav a:first-child {
+        content: '';    
+    }
 }
 header nav a:first-child {
     margin-right: auto;
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 150%;
 }
 header nav a {
     padding: 1rem;
@@ -47,27 +63,44 @@ header nav a:hover {
     position: relative;
     text-align: center;
     color: #fcf6b1;
+    margin: 0 5%;
 }
 .hero h1 {
     position: absolute;
+    text-transform: uppercase;
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 2rem;
+    font-size: 200%;
 }
 .hero a {
     position: absolute;
-    top: 57%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 1rem;
+    padding: 1%;
     background: #2D1E2F;
     color: #fcf6b1;
 }
+@media screen and (max-width:1440px) {
+    .hero a {
+        margin-top: 1%;
+    }
+}
+@media screen and (max-width:1024px) {
+    .hero a {
+        margin-top: 1.5%;
+    }
+}
+@media screen and (max-width:800px) {
+    .hero a {
+        margin-top: 2%;
+    }
+}
+
 
 /* preview */
 .preview {
-    text-align: center;
     color: #fcf6b1;
     margin: 1rem;
     display: flex;
@@ -76,9 +109,16 @@ header nav a:hover {
 }
 
 .project-card {
-    width: 33.3333%;
-    margin: 0 0 1rem 0;
+    margin: 1rem 0;
+    flex-basis: 30%;
+    text-align: center;
 }
+@media screen and (max-width:1440px) {
+    /* .project-card {
+        margin: 1rem;
+    } */
+}
+
 
 /* footer */
 footer {
