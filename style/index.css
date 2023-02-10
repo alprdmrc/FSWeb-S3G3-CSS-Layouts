@@ -9,11 +9,6 @@ body {
     font-family: 'Roboto Mono', monospace;
     background: #2D1E2F;
 }
-@media screen and (max-width:800px) {
-    *, body, h1, h2, a {
-        font-size: 80%;
-    }
-}
 .container {
     width: 80vw;
     margin: 0 auto;
@@ -21,6 +16,11 @@ body {
 img {
     max-width: 100%;
     max-height: 100%;
+}
+@media screen and (max-width:800px) {
+    *, body, h1, h2, a {
+        font-size: 90%;
+    }
 }
 
 
@@ -32,15 +32,6 @@ header nav {
     display: flex;
     justify-content: flex-end;
     align-items: baseline;
-}
-@media screen and (max-width:425px) {
-    header nav {
-        flex-direction: column;
-        align-items: center;
-    }
-    header nav a:first-child {
-        content: '';    
-    }
 }
 header nav a:first-child {
     margin-right: auto;
@@ -55,7 +46,20 @@ header nav a {
 header nav a:hover {
     color: #2D1E2F;
     text-decoration: underline;
-   
+    
+}
+@media screen and (max-width:425px) {
+    header nav {
+        margin: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    header nav a {
+        padding: 0.6rem;
+    }
+    header nav a:first-child {
+        margin-right: 0;
+    }
 }
 /* hero */
 
@@ -87,6 +91,7 @@ header nav a:hover {
         margin-top: 1%;
     }
 }
+
 @media screen and (max-width:1024px) {
     .hero a {
         margin-top: 1.5%;
@@ -95,6 +100,11 @@ header nav a:hover {
 @media screen and (max-width:800px) {
     .hero a {
         margin-top: 2%;
+    }
+}
+@media screen and (max-width:425px) {
+    .hero a {
+        margin-top: 10%;
     }
 }
 
@@ -117,6 +127,16 @@ header nav a:hover {
     /* .project-card {
         margin: 1rem;
     } */
+}
+@media screen and (max-width:800px) {
+    .project-card{
+        flex-basis: 45%;
+    }
+}
+@media screen and (max-width:425px) {
+    .project-card {
+        flex-basis: 45%;
+    }
 }
 
 
